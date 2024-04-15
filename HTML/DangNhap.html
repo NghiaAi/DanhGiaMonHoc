@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="/CSS/DangNhap.css" />
+
+  </head>
+  <body>
+    <div class="login-container">
+      <form class="login-form">
+        <div class="brand-logo"></div>
+        <div class="input-group">
+          <label for="username">Tài khoản</label>
+          <input type="text" id="username" placeholder="Tài khoản" required />
+        </div>
+        <div class="input-group">
+          <label for="password">Mật khẩu</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Mật khẩu"
+            required
+          />
+        </div>
+        <button type="submit" class="login-btn">Đăng nhập</button>
+        <div class="login-links">
+          <a href="#" class="forgot-password">Quên mật khẩu?</a>
+          <!-- <a href="#" class="register">Đăng ký</a> -->
+        </div>
+        <button type="button" class="exit-btn">Thoát</button>
+      </form>
+    </div>
+    
+  </body>
+  <script type="module" src="/JS/DangNhap.js"></script>
+  <script type="module" src="/JS/userData.js"></script>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tai Khoan</title>
+    <link rel="stylesheet" href="/CSS/TaiKhoan.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="header">
+          <img src="/IMG/icon.png" alt="" />
+          <h1 onclick="window.location.href='TrangChu.html';">ONEEIGHT</h1>
+        </div>
+        <div class="menu">
+          <div class="item" onclick="window.location.href='TrangChu.html';">
+            <div class="img">
+              <img src="/IMG/icons8-home-64.png" alt="" />
+            </div>
+            <h3>Trang Chủ</h3>
+          </div>
+          <div
+            class="item"
+            onclick="window.location.href='DanhSachMonHoc.html';"
+          >
+            <div class="img">
+              <img src="/IMG/book.png" alt="" />
+            </div>
+            <h3>Môn Học</h3>
+          </div>
+          <div class="item" onclick="window.location.href='DanhGia.html';">
+            <div class="img">
+              <img src="/IMG/messenger.png" alt="" />
+            </div>
+            <h3>Đánh Giá</h3>
+          </div>
+          <div class="item" onclick="window.location.href='ThongKe.html';">
+            <div class="img">
+              <img src="/IMG/graph.png" alt="" />
+            </div>
+            <h3>Thống Kê</h3>
+          </div>
+          <div class="item" onclick="window.location.href='TaiKhoan.html';">
+            <div class="img">
+              <img src="/IMG/user.png" alt="" />
+            </div>
+            <h3>Tài Khoản</h3>
+          </div>
+        </div>
+        <div class="footer" onclick="window.location.href='DangNhap.html';">
+          <div class="img">
+            <img src="/IMG/icons8-log-out-64.png" alt="" />
+          </div>
+          <h2>Đăng Xuất</h2>
+        </div>
+      </div>
+      <div class="content">
+        <div class="title">
+          <h1>Tài Khoản</h1>
+          <div class="img" onclick="window.location.href='TaiKhoan.html';">
+            <img src="/IMG/account.png" alt="" />
+          </div>
+        </div>
+        <div class="namelist">
+          <h1>Cài Đặt Tài Khoản</h1>
+        </div>
+        <div class="form">
+          <form action="">
+            <label for="studentID">Mã Sinh Viên:</label>
+            <input
+              type="text"
+              id="studentID"
+              name="studentID"
+              readonly
+            /><br /><br />
+
+            <label for="studentName">Tên Sinh Viên:</label>
+            <input
+              type="text"
+              id="studentName"
+              name="studentName"
+              readonly
+            /><br /><br />
+
+            <!-- <label for="oldPassword">Mật Khẩu Cũ:</label>
+                  <input type="password" id="oldPassword" name="oldPassword" readonly><br><br>
+      
+                  <label for="newPassword">Mật Khẩu Mới:</label>
+                  <input type="password" id="newPassword" name="newPassword"><br><br>
+      
+                  <label for="confirmPassword">Nhập Lại Mật Khẩu:</label>
+                  <input type="password" id="confirmPassword" name="confirmPassword"><br><br> -->
+            <label for="oldPassword">Mật Khẩu Cũ:</label>
+            <div class="password-container">
+              <input
+                type="password"
+                id="oldPassword"
+                name="oldPassword"
+                readonly
+              />
+              <i class="fa-solid fa-eye password-toggle" id="eyeOld"></i>
+            </div>
+            <br /><br />
+
+            <label for="newPassword">Mật Khẩu Mới:</label>
+            <div class="password-container">
+              <input
+                type="password"
+                id="newPassword"
+                name="newPassword"
+                class="password-input"
+              />
+              <i class="fa-solid fa-eye password-toggle" id="eyeNew"></i>
+            </div>
+            <br /><br />
+
+            <label for="confirmPassword">Nhập Lại Mật Khẩu:</label>
+            <div class="password-container">
+              <input
+                type="password"
+                id="confirmPassword"
+                name="confirmPassword"
+              />
+              <i class="fa-solid fa-eye password-toggle" id="eyeConfirm"></i>
+            </div>
+            <br /><br />
+
+            <input type="submit" value="Đổi Mật Khẩu" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/JS/TaiKhoan.js"></script>
+    <script type="module" src="/JS/userData.js"></script>
+  </body>
+</html>

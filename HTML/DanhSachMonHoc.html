@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danh Sach Mon Hoc</title>
+    <link rel="stylesheet" href="/CSS/DanhSachMonHoc.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="header">
+          <img src="/IMG/icon.png" alt="" />
+          <h1 onclick="window.location.href='TrangChu.html';">ONEEIGHT</h1>
+        </div>
+        <div class="menu">
+          <div class="item" onclick="window.location.href='TrangChu.html';">
+            <div class="img">
+              <img src="/IMG/icons8-home-64.png" alt="" />
+            </div>
+            <h3>Trang Chủ</h3>
+          </div>
+          <div
+            class="item"
+            onclick="window.location.href='DanhSachMonHoc.html';"
+          >
+            <div class="img">
+              <img src="/IMG/book.png" alt="" />
+            </div>
+            <h3>Môn Học</h3>
+          </div>
+          <div class="item" onclick="window.location.href='DanhGia.html';">
+            <div class="img">
+              <img src="/IMG/messenger.png" alt="" />
+            </div>
+            <h3>Đánh Giá</h3>
+          </div>
+          <div class="item" onclick="window.location.href='ThongKe.html';">
+            <div class="img">
+              <img src="/IMG/graph.png" alt="" />
+            </div>
+            <h3>Thống Kê</h3>
+          </div>
+          <div class="item" onclick="window.location.href='TaiKhoan.html';">
+            <div class="img">
+              <img src="/IMG/user.png" alt="" />
+            </div>
+            <h3>Tài Khoản</h3>
+          </div>
+        </div>
+        <div class="footer" onclick="window.location.href='DangNhap.html';">
+          <div class="img">
+            <img src="/IMG/icons8-log-out-64.png" alt="" />
+          </div>
+          <h2>Đăng Xuất</h2>
+        </div>
+      </div>
+      <div class="content">
+        <div class="title">
+          <h1>Môn Học</h1>
+          <div class="img" onclick="window.location.href='TaiKhoan.html';">
+            <img src="/IMG/account.png" alt="" />
+          </div>
+        </div>
+        <div class="namelist">
+          <h1>Danh Sách Môn Học</h1>
+        </div>
+        <div class="list">
+          <table id="listcourseTableBody">
+            <thead>
+              <tr>
+                <th>STT</th>
+                <th>Mã Môn Học</th>
+                <th>Tên Môn Học</th>
+                <th>Số TC</th>
+                <th>Tên Giảng Viên</th>
+                <th>Số Lượt Đánh Giá</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="module" src="/JS/DanhSachMonHoc.js"></script>
+</html>
